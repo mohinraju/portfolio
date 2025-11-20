@@ -3,29 +3,33 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
 body {
   background-color: black;
   color: white;
   line-height: 1.5;
 }
+
+/* Main title */
 .maintitle {
   font-family: "Product Sans", sans-serif;
   font-size: 60px;
   text-align: center;
-  background: #020024;
   background: linear-gradient(90deg, #fc466b 1%, #3f5efb 100%);
   background-clip: text;
   color: transparent;
   letter-spacing: 10px;
+  margin: 20px 10px;
 }
 
+/* Nav items */
 .navitemss {
   text-decoration: none;
   display: inline;
-  margin-right: 130px;
-  margin-left: 20px;
+  margin: 0 10px;
   font-weight: 600;
 }
+
 .nav_a {
   text-decoration: none;
   color: white;
@@ -40,26 +44,33 @@ body {
   transform: translateY(-7px);
 }
 
+/* Navbar container */
 nav {
   border: 3px solid rgb(87, 87, 229);
-
   border-radius: 50px;
-  width: 1400px;
-  background-color: aqua;
+  max-width: 1400px;
+  width: 95%;
   margin: 10px auto;
 }
+
+/* Nav list as flex */
 .navlist {
-  display: inline;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 12px;
 }
+
+/* Intro text */
 .parainfo {
   text-align: center;
   margin: 20px;
   font-size: 30px;
   color: bisque;
 }
-.hero_video {
-  width: 100%;
-}
+
 /* Hero Section */
 .hero_section {
   position: relative;
@@ -77,7 +88,7 @@ nav {
   z-index: 0;
 }
 
-/* Navbar */
+/* Navbar over video */
 nav.navbar {
   position: absolute;
   top: 20px;
@@ -85,37 +96,36 @@ nav.navbar {
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.4); /* Transparent black */
+  padding: 0;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 50px;
   z-index: 1;
 }
 
+/* Sections & footer cards */
 section,
 footer {
-  width: 80%;
+  width: min(90%, 1100px);
   margin: 30px auto;
   padding: 30px;
   border-radius: 20px;
-
   background-color: #001f3f;
   border: 2px solid #00458c;
-
   transition: 0.5s;
 }
+
 section:hover,
 footer:hover {
   box-shadow: 0 0 20px rgb(77, 104, 238), 0 0 40px rgb(77, 104, 238);
   cursor: pointer;
   transform: translateY(-2px);
 }
+
+/* Section headings */
 .sectiontitle {
   font-family: "Product Sans", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  background: #020024;
-  background: #020024;
   background: linear-gradient(
     241deg,
     rgba(2, 0, 36, 1) 0%,
@@ -125,12 +135,12 @@ footer:hover {
   background-clip: text;
   color: transparent;
 }
+
+/* Sub-headings */
 .lg {
   font-family: "Product Sans", sans-serif;
   font-size: 25px;
   font-weight: 600;
-  background: #020024;
-  background: #020024;
   background: linear-gradient(
     241deg,
     rgb(5, 36, 29) 0%,
@@ -141,11 +151,13 @@ footer:hover {
   color: transparent;
 }
 
+/* Links inside gradient buttons */
 #githubvisit {
   text-decoration: none;
   color: white;
 }
 
+/* Primary buttons */
 .btn-grad {
   background-image: linear-gradient(
     to right,
@@ -154,6 +166,7 @@ footer:hover {
     #4776e6 100%
   );
 }
+
 .btn-grad {
   margin-top: 30px;
   margin-right: 10px;
@@ -163,61 +176,84 @@ footer:hover {
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-
   border-radius: 10px;
   display: block;
 }
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
   transform: translateY(-7px);
 }
 
+/* Paragraph-like text */
 #par {
   font-size: 20px;
   margin-left: 20px;
   font-family: "DM Serif Text", serif;
 }
+
 #dtdd,
 #parr {
   font-size: 20px;
   text-decoration: none;
   font-family: "DM Serif Text", serif;
 }
+
+/* About section layout */
 .abtme {
   display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
 }
+
+/* Buttons row (GitHub / Degree) */
 .gitdeg {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+/* Profile image */
 #im {
   border-radius: 800px;
   transition: 0.5s;
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto 0;
 }
+
 #im:hover {
   box-shadow: 0 0 20px rgb(77, 104, 238), 0 0 40px rgb(77, 104, 238);
   cursor: pointer;
   border: 2px solid blue;
   transform: translateY(-2px);
 }
+
+/* Project descriptions */
 .dtd {
   font-size: 20px;
   font-family: "DM Serif Text", serif;
 }
+
 #dtdp {
   font-family: "DM Serif Text", serif;
-
   margin-left: 20px;
   font-size: 20px;
 }
+
+/* Project titles */
 #ht {
   font-weight: 800;
   color: #1e90ff;
   font-family: "Product Sans", sans-serif;
 }
 
+/* Secondary buttons */
 .btn-gra {
   background-image: linear-gradient(
     to right,
@@ -226,6 +262,7 @@ footer:hover {
     #4776e6 100%
   );
 }
+
 .btn-gra {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -236,44 +273,213 @@ footer:hover {
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-
   border-radius: 10px;
   display: block;
 }
 
 .btn-gra:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
   transform: translateY(-7px);
 }
 
+/* Button groups in projects */
 .butt {
   display: flex;
+  flex-wrap: wrap;
 }
 
+/* Contact links */
 #lin {
   text-decoration: none;
   color: #8e54e9;
 }
 
+/* Back to top button */
 .too {
   margin: 0px auto;
 }
+
+/* Social icons */
 #sm {
   border-radius: 100px;
   transition: 0.5s;
-
   width: 40px;
   height: 40px;
 }
+
 #rap {
   font-size: 20px;
   margin-left: 20px;
   font-family: "DM Serif Text", serif;
   margin-top: 5px;
 }
+
 #sm:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 0px 30px rgb(115, 115, 255), -0px -0px 30px rgb(115, 115, 255);
+  box-shadow: 0px 0px 30px rgb(115, 115, 255),
+    -0px -0px 30px rgb(115, 115, 255);
 }
+
+/* ---------- DESKTOP NAVBAR FULL-WIDTH SPACING ---------- */
+
+@media (min-width: 1025px) {
+  .navlist {
+    justify-content: space-between;  /* spread items fully */
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+/* ---------- CONNECT WITH ME ICONS: ONE LINE ALWAYS ---------- */
+
+footer > div {
+  display: flex;
+  flex-wrap: nowrap;      /* keep icons in one line */
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;       /* allow horizontal scroll if very narrow */
+}
+
+/* ---------- RESPONSIVE STYLES ---------- */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .maintitle {
+    font-size: 42px;
+    letter-spacing: 5px;
+  }
+
+  .nav_a {
+    font-size: 20px;
+  }
+
+  .parainfo {
+    font-size: 22px;
+    margin: 15px;
+  }
+
+  section,
+  footer {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .sectiontitle {
+    font-size: 32px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  /* Hero: make video shorter and navbar normal flow */
+  .hero_section {
+    height: auto;
+  }
+
+  .hero_video {
+    position: relative;
+    height: 240px;
+  }
+
+  nav.navbar {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  nav {
+    width: 95%;
+  }
+
+  .navlist {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav_a {
+    font-size: 16px;
+  }
+
+  .maintitle {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .parainfo {
+    font-size: 18px;
+  }
+
+  /* Stack about section */
+  .abtme {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #par,
+  #parr,
+  #dtdp,
+  .dtd {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .lg {
+    font-size: 22px;
+  }
+
+  .gitdeg {
+    justify-content: center;
+  }
+
+  .btn-grad,
+  .btn-gra {
+    width: 100%;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #rap {
+    margin-left: 0;
+    font-size: 18px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .maintitle {
+    font-size: 24px;
+  }
+
+  .nav_a {
+    font-size: 14px;
+  }
+
+  section,
+  footer {
+    padding: 16px;
+  }
+
+  .sectiontitle {
+    font-size: 26px;
+  }
+
+  #par,
+  #parr,
+  #dtdp,
+  .dtd {
+    font-size: 16px;
+  }
+
+  .parainfo {
+    font-size: 16px;
+  }
+}
+
