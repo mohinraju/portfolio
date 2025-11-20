@@ -209,7 +209,7 @@ footer:hover {
   justify-content: space-between;
 }
 
-/* Buttons row (GitHub / Degree) */
+/* Buttons row */
 .gitdeg {
   display: flex;
   flex-wrap: wrap;
@@ -284,7 +284,7 @@ footer:hover {
   transform: translateY(-7px);
 }
 
-/* Button groups in projects */
+/* Button groups */
 .butt {
   display: flex;
   flex-wrap: wrap;
@@ -296,7 +296,7 @@ footer:hover {
   color: #8e54e9;
 }
 
-/* Back to top button */
+/* Back to top */
 .too {
   margin: 0px auto;
 }
@@ -323,10 +323,9 @@ footer:hover {
 }
 
 /* ---------- DESKTOP NAVBAR FULL-WIDTH SPACING ---------- */
-
 @media (min-width: 1025px) {
   .navlist {
-    justify-content: space-between;  /* spread items fully */
+    justify-content: space-between;  
     width: 100%;
     padding: 10px 40px;
   }
@@ -337,19 +336,26 @@ footer:hover {
   }
 }
 
-/* ---------- CONNECT WITH ME ICONS: ONE LINE ALWAYS ---------- */
+/* ---------- DESKTOP: BIGGER ABOUT ME IMAGE ---------- */
+@media (min-width: 1025px) {
+  #im {
+    max-width: 380px;   /* INCREASED SIZE FOR DESKTOP */
+    height: auto;
+  }
+}
 
+/* ---------- CONNECT WITH ME ICONS ON ONE LINE ---------- */
 footer > div {
   display: flex;
-  flex-wrap: nowrap;      /* keep icons in one line */
+  flex-wrap: nowrap;
   align-items: center;
   gap: 20px;
-  overflow-x: auto;       /* allow horizontal scroll if very narrow */
+  overflow-x: auto;
 }
 
 /* ---------- RESPONSIVE STYLES ---------- */
 
-/* Tablets & small laptops */
+/* Tablets */
 @media (max-width: 1024px) {
   .maintitle {
     font-size: 42px;
@@ -376,22 +382,18 @@ footer > div {
   }
 }
 
-/* Mobile screens */
+/* Mobiles */
 @media (max-width: 768px) {
-  /* Hero: make video shorter and navbar normal flow */
   .hero_section {
     height: auto;
   }
 
-@media (max-width: 768px) {
   .hero_video {
     position: relative;
     width: 100%;
-    height: auto;       /* adjust height based on width */
-    object-fit: contain; /* show the full video without cropping */
+    height: auto;
+    object-fit: contain;
   }
-}
-
 
   nav.navbar {
     position: static;
@@ -421,7 +423,6 @@ footer > div {
     font-size: 18px;
   }
 
-  /* Stack about section */
   .abtme {
     flex-direction: column;
     text-align: center;
@@ -457,7 +458,7 @@ footer > div {
   }
 }
 
-/* Extra small devices */
+/* Extra small */
 @media (max-width: 480px) {
   .maintitle {
     font-size: 24px;
@@ -487,4 +488,3 @@ footer > div {
     font-size: 16px;
   }
 }
-
