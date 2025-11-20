@@ -383,10 +383,15 @@ footer > div {
     height: auto;
   }
 
+@media (max-width: 768px) {
   .hero_video {
     position: relative;
-    height: 240px;
+    width: 100%;
+    height: auto;       /* adjust height based on width */
+    object-fit: contain; /* show the full video without cropping */
   }
+}
+
 
   nav.navbar {
     position: static;
